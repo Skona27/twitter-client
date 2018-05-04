@@ -13,7 +13,7 @@ What things you need to have installed in order to run the App
 ```
 NodeJS
 NPM
-Latest version of Mozilla Firefox or Google Chrome
+Mozilla Firefox or Google Chrome (with CSS Grid support)
 ```
 
 ### Installing
