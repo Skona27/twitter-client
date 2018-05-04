@@ -39,7 +39,7 @@ You will see the app landing page and you will be able to sign in using yor Twit
 
 * Express - The framework used
 * NPM - Dependency Management
-* PassportJS] - Used to authenticate with Twitter
+* PassportJS - Used to authenticate with Twitter
 * Twitter - Twitter API Client
 
 ## Author
