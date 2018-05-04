@@ -23,6 +23,7 @@ A step by step series of examples that tell you have to get a development env ru
 Unpack files, open folder in terminal and type:
 
 ```
+npm install
 npm start
 ```
 
