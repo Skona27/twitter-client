@@ -1,0 +1,32 @@
+{
+  "name": "Twitter-Client",
+  "version": "1.0.0",
+  "description": "Twitter client app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "watch-sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "compile-sass": "node-sass public/sass/main.scss public/css/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.comp.css -o public/css/style.prefix.css",
+    "compress-css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build-css": "npm-run-all compile-sass prefix-css compress-css"
+  },
+  "author": "Jakub Skoneczny",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "passport": "^0.4.0",
+    "passport-twitter": "^1.0.4",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
+  }
+}
