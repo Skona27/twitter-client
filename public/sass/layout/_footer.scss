@@ -1,0 +1,21 @@
+.footer {
+    background-color: $color-dark;
+    color: $color-white;
+    text-align: center;
+    padding: 3.5rem;
+
+    &__copy {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $color-white;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-primary-dark;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

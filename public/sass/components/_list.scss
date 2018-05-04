@@ -1,0 +1,22 @@
+.list {
+    list-style: none;
+    margin-top: 1rem;
+
+    &__header {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+        text-decoration: underline;
+        margin-bottom: 1rem;
+        color: $color-primary-dark;
+    }
+
+    &__item {
+        padding: .4rem;
+        font-size: 1.6rem;
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $color-primary-light;
+        }
+    }
+}

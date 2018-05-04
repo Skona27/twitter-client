@@ -1,0 +1,8 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    min-height: calc(100vh - 34.1rem);
+    background-color: $color-secondary;
+}

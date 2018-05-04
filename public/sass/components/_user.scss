@@ -1,0 +1,45 @@
+.user {
+    &__photo {
+        border-radius: 50%;
+        height: 7rem;
+    }
+
+    &__name {
+        margin-top: 1rem;
+        font-size: 2.2rem;
+        color: $color-dark;
+
+        &--display {
+            font-weight: 400;
+        }
+
+        &--login {
+            display: block;
+            font-weight: 300;
+        }
+    }
+
+    &__box {
+        max-width: 90rem;
+        margin-top: 6rem;
+
+        display: grid;
+        grid-template-columns: 2fr repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    &__form {
+        grid-column: 1 / -1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        font-size: 18px;
+        font-weight: 300;
+        outline: none;
+        padding: 1rem;
+    }
+}

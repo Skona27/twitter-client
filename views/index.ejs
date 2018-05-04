@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twitter-Client App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading-1">
+            <span class="heading-1--main">Twitter</span>
+            <span class="heading-1--sub">Client</span>
+        </h1>
+        <h2 class="heading-2">A simple proxy App for Twitter</h2>
+    </header>
+
+    <main class="main">
+        <% if(!user) { %>
+            <a class="btn" href="./twitter/login">Sign in with Twitter</a>
+            <% } else { %>
+                <img class="user__photo" src="<%=user.data.photos[0].value%>" alt="Photo">
+                <h3 class="user__name">
+                    <span class="user__name--display">
+                        <%=user.data.displayName%>
+                    </span>
+                    <span class="user__name--login">(
+                        <%=user.data.username%>)</span>
+                </h3>
+                <a href="./twitter/logout" class="btn btn--secondary">Logout</a>
+                <div class="user__box">
+                    <div>
+                        <h3 class="list__header">Recent Tweets:</h3>
+                        <ul class="list list--tweets">
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="list__header">Your Followers:</h3>
+                        <ul class="list list--followers">
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="list__header">You Follow:</h3>
+                        <ul class="list list--friends">
+                        </ul>
+                    </div>
+                    <div class="user__form">
+                        <h2 class="heading-3">Add a new Tweet:</h2>
+                        <textarea id="tweet" cols="65" rows="10" class="user__input"></textarea>
+                        <button class="btn u-margin-top-small" id="post">Post tweet</button>
+                    </div>
+                </div>
+                <% } %>
+    </main>
+    <footer class="footer">
+        <p class="footer__copy">Copyright &copy; 2018 - Jakub Skoneczny</p>
+        <a class="footer__link" href="http://jskoneczny.pl" target="_blank">jskoneczny.pl</a>
+    </footer>
+
+    <% if(user) { %>
+    <script src="./js/script.js"></script>
+    <% } %>
+</body>
+</html>
