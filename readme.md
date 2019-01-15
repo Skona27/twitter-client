@@ -44,7 +44,7 @@ You will see the app landing page and you will be able to sign in using yor Twit
 
 ## Author
 
-* **Jakub Skoneczny** - [jskoneczny.pl](http://jskoneczny.pl)
+* **Jakub Skoneczny** - [Portfolio](http://jskoneczny.pl)
 
 ## License
 
